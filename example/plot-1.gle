@@ -1,0 +1,17 @@
+size 18 12
+
+
+begin graph
+   data "Im5Bi2Cl11_T1fit_293K.dat" comment # d1=c2,c4
+
+   data "Im3-N1H1H2H5-v2-out.dat" comment # d5=c1,c2
+
+   xaxis log
+   ! xaxis max 2e6
+   yaxis log
+   xtitle "f in Hz"
+   ytitle "1/T1 in s^{-1}"
+
+   d1 color blue marker plus mscale 0.5 lstyle 2
+   d5 lstyle 1
+end graph
